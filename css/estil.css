@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    margin: 100px 100px 100px 550px;
+    /*padding: 100px 100px 100px 550px;*/
+    font-family: 'Outfit';
+}
+
+.card{
+    background-color:hsl(216, 50%, 16%);
+    border: 1px solid black;
+    width:400px;
+    height: 650px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px 10px 20px;
+    min-width: 320px;
+
+}
+
+header{
+    /*especificar el tamaño de header para el absolute*/
+    width: 360px;
+    height: 350px;
+    /*para que no sobresalga de los margenes*/
+    overflow: hidden;
+    border-radius: 15px;
+
+}
+    
+
+    
+
+.cubo img{
+
+    width:100%;
+    
+   
+   
+
+}
+
+.view{
+    /*especificar el tamaño de la capa por ser absolulte*/
+    width: 360px;
+    height: 350px;
+
+    /*esconder lo sobrante*/
+    overflow: hidden;
+    /*para centrar el ojo*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*para ocultarlo hasta que se destape con el hover*/
+    opacity:0;
+    /*darle posición encima de la otra capa*/
+    position:absolute;
+    /*la capa aqua transparente*/
+    background-color: hsla(178,100%,50%,0.35);
+    /*superponerlo encima de la capa "cubo"*/
+    z-index: 1;
+    border-radius:15px;
+    
+}
+
+.view img{
+    width:80px;
+}
+
+
+.view:hover{
+opacity:1;
+}
+
+
+
+.p1{
+    margin-top: 20px;
+    color:white;
+    font-weight: bold;
+    
+
+}
+
+.p1:hover{
+    color:aqua;
+}
+
+.p2{
+    margin-top: 30px;
+    color:hsl(215, 32%, 27%);
+    margin-bottom: 30px;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.icon{
+    width:8%;
+}
+
+.eth{
+    color:aqua;
+}
+
+.icon2{
+    width: 15%;
+}
+
+.reloj{
+    color:gray;
+}
+
+hr{
+ color: grey;
+ width: 100%;
+}
+footer{
+    display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+
+
+}
+
+.container-avatar{
+    width:40px;
+    height: 40px;
+}
+
+ .avatar{
+    width:40px;
+    border: 1px white solid;
+    border-radius:50% ;
+}
+
+.credits{
+    color:gray;
+    
+    margin-left: 10px;
+    
+}
+
+cite{
+    color: white;
+}
+
+cite:hover{
+    color:aqua;
+}
+
+@media screen and (max-width:375px){
+    body{
+        margin: 0 0 0 0;
+        min-width: 375px;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:1080px){
+    body{
+        margin:50px 50px 50px 50px;
+    }
+}
